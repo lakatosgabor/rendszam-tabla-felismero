@@ -19,7 +19,6 @@ def main():
     if blnKNNTrainingSuccessful == False:
         print("\nerror: KNN traning was not successful\n")
         return
-    # end if
 
     while True:
         success, imgOriginalScene = camera.read()
@@ -31,11 +30,9 @@ def main():
             if len(listOfPossiblePlates) != 0:
                 listOfPossiblePlates.sort(key = lambda possiblePlate: len(possiblePlate.strChars), reverse = True)
                 licPlate = listOfPossiblePlates[0]
-                print("\nAzonosítva= " + licPlate.strChars + "\n")
 
                 if len(licPlate.strChars) != 0:
-                    if licPlate.strChars == "RAP235":
-                        print("\nAzonosítva= " + licPlate.strChars + "\n")
+                    print("\nAzonosítva= " + licPlate.strChars + "\n")
             else:
                 print("\nNincs detektálható rendszám!" "\n")
 
@@ -48,8 +45,3 @@ def main():
 if __name__ == "__main__":
     while True:
         main()
-
-
-
-
-
