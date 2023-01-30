@@ -252,12 +252,3 @@ def recognizeCharsInPlate(imgThresh, listOfMatchingChars):
         strChars = strChars + strCurrentChar
 
     return strChars
-
-
-
-
-
-
-
-
-
