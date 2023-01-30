@@ -24,11 +24,3 @@ class PossibleChar:
         self.fltDiagonalSize = math.sqrt((self.intBoundingRectWidth ** 2) + (self.intBoundingRectHeight ** 2))
 
         self.fltAspectRatio = float(self.intBoundingRectWidth) / float(self.intBoundingRectHeight)
-
-
-
-
-
-
-
-
